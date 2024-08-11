@@ -11,7 +11,7 @@
     <header>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+              <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Home</button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
@@ -20,22 +20,218 @@
               <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+              <button class="nav-link" id="pills-projects-tab" data-bs-toggle="pill" data-bs-target="#pills-projects" type="button" role="tab" aria-controls="pills-projects" aria-selected="false">Our Recent Projects</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-key-tab" data-bs-toggle="pill" data-bs-target="#pills-key" type="button" role="tab" aria-controls="pills-key" aria-selected="false">Key Players</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-testimonials-tab" data-bs-toggle="pill" data-bs-target="#pills-testimonials" type="button" role="tab" aria-controls="pills-testimonials" aria-selected="true">Testimonials</button>
             </li>
         </ul>
     </header>
 
     <main>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
+            <div class="tab-pane fade show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+
+            <!-- Projects Tab -->
+            <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab" tabindex="0" style="padding: 3%; padding-top: 5px;">
+                <h1 style="text-align: center; margin-bottom: 25px;">Our Recent Projects</h1>
+                <div class="card-group" style="display: flex; align-items: center; justify-content: center;">
+                    <div class="card mb-3" style="max-width: 50%; min-width: 380px; border-color: maroon; border-width: 3px;">
+                        <div class="row g-0">
+                          <div class="col-md-4" style="display: flex; align-items: center; justify-content: center;">
+                            <img src="./imgs/kevo.jpg" class="img-fluid" style="height: 100%; width: auto; padding: 5%;" alt="Kevo image">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center;">KEVO Cold Brew Coffee, Simplified</h5>
+                              <div style="display: flex; align-items: center; justify-content: center;">
+                                <ul>
+                                    <li>Goal, $10,000</li>
+                                    <li>Raised, $17,600</li>
+                                    <li>176% of goal</li>
+                                    <li>Donors, 149</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-3" style="max-width: 50%; min-width: 380px; border-color: maroon; border-width: 3px;">
+                        <div class="row g-0">
+                          <div class="col-md-4" style="display: flex; align-items: center; justify-content: center;">
+                            <img src="./imgs/pineapple.png" class="img-fluid" style="height: 100%; width: auto; padding: 5%;" alt="Pineapple image">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center;">Pineapple Eddy</h5>
+                              <div style="display: flex; align-items: center; justify-content: center;">
+                                <ul>
+                                    <li>Goal, $10,000</li>
+                                    <li>Raised, $13,147</li>
+                                    <li>131% of goal</li>
+                                    <li>Donors, 181</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-group" style="display: flex; align-items: center; justify-content: center;">
+                    <div class="card mb-3" style="max-width: 50%; min-width: 380px; border-color: maroon; border-width: 3px;">
+                        <div class="row g-0">
+                          <div class="col-md-4" style="display: flex; align-items: center; justify-content: center;">
+                            <img src="./imgs/yard.png" class="img-fluid" style="height: 100%; width: auto; padding: 5%;" alt="Yard image">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center;">Eat Your Yard</h5>
+                              <div style="display: flex; align-items: center; justify-content: center;">
+                                <ul>
+                                    <li>Goal, $10,000</li>
+                                    <li>Raised, $10,913</li>
+                                    <li>109% of goal</li>
+                                    <li>Donors, 105</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-3" style="max-width: 50%; min-width: 380px; border-color: maroon; border-width: 3px;">
+                        <div class="row g-0">
+                          <div class="col-md-4" style="display: flex; align-items: center; justify-content: center;">
+                            <img src="./imgs/Alex.png" class="img-fluid" style="height: 100%; width: auto; padding: 5%;" alt="Alex image">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center;">Eat Your Yard</h5>
+                              <div style="display: flex; align-items: center; justify-content: center;">
+                                <ul>
+                                    <li>Goal, $12,000</li>
+                                    <li>Raised, $12,505</li>
+                                    <li>104% of goal</li>
+                                    <li>Donors, 105</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Players Tabs -->
+            <div class="tab-pane fade active" id="pills-key" role="tabpanel" aria-labelledby="pills-key-tab" tabindex="0" style="padding: 3%; padding-top: 5px;">
+                <h1 style="text-align: center; margin-bottom: 25px;">Key Players</h1>
+                <div class="card mb-3" style="width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4" style="display: flex; align-items: center; justify-content: center;">
+                        <img src="./imgs/eti.png" class="img-fluid rounded-start" style="height: 100%; width: auto; max-height: 200px; padding: 3%;" alt="ETI image">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <p class="card-text">The Erie Technology Incubator serves Northwest Pennsylvania with a unique blend of strategic guidance, dedicated mentor teams, 1:1 coaching, and networking opportunities. It provides early-stage technology-enabled companies with critical resources and support to guide them through key milestones and phases of their entrepreneurial journey.</p>
+                          <div style="display: flex; align-items: center; justify-content: center; margin-top: 15px;">
+                            <button style="color: white; background-color: maroon; padding-left: 15px; padding-right: 15px; padding: top 10px; padding-bottom: 10px;">Learn More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4" style="display: flex; align-items: center; justify-content: center;">
+                        <img src="./imgs/gannon.png" class="img-fluid rounded-start" style="height: 100%; width: auto; max-height: 200px; padding: 3%;" alt="Gannon image">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <p class="card-text">The Dahlkemper School of Business at Gannon University serves as a center of ethical business leadership and innovation to provide an excellent education in all areas of business from a values-centered and global perspective and to develop leaders to transform the world of business. </p>
+                          <div style="display: flex; align-items: center; justify-content: center; margin-top: 15px;">
+                            <button style="color: white; background-color: maroon; padding-left: 15px; padding-right: 15px; padding: top 10px; padding-bottom: 10px;">Learn More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4" style="display: flex; align-items: center; justify-content: center;">
+                        <img src="./imgs/ecf.png" class="img-fluid rounded-start" style="height: 100%; width: auto; max-height: 200px; padding: 3%;" alt="ECF image">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <p class="card-text">CrowdDrive is funded through an Erie Community Foundation Helping Today grant. The Erie Community Foundation is a collection of 800 charitable endowments operating under the administrative umbrella of a single public charity. The Foundation’s mission is to inspire, engage, and empower donors and communities across the region, today and tomorrow.</p>
+                          <div style="display: flex; align-items: center; justify-content: center; margin-top: 15px;">
+                            <button style="color: white; background-color: maroon; padding-left: 15px; padding-right: 15px; padding: top 10px; padding-bottom: 10px;">Learn More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Tab -->
+            <div class="tab-pane fade" id="pills-testimonials" role="tabpanel" aria-labelledby="pills-testimonials-tab" tabindex="0" style="padding: 3%; padding-top: 5px;">
+                <h1 style="text-align: center; margin-bottom: 25px;">Testimonials</h1>
+                <div class="card-group">
+                    <div class="card" style="border: 3px solid maroon;">
+                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 15px">
+                            <img src="./imgs/Paul.jpg" style="height: 100%; width: auto; max-height: 150px;" class="card-img-top" alt="Paul">
+                        </div>
+                      <div class="card-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+                        <h5 class="card-title">Paul McMahon</h5>
+                        <p class="card-text">Kevo</p>
+                      </div>
+                    </div>
+                    <div class="card" style="border: 3px solid maroon;">
+                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 15px">
+                            <img src="./imgs/Tess.jpg" style="height: 100%; width: auto; max-height: 150px;" class="card-img-top" alt="Tess">
+                        </div>
+                      <div class="card-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+                        <h5 class="card-title">Tess Frawley</h5>
+                        <p class="card-text">Eat Your Yard</p>
+                      </div>
+                    </div>
+                    <div class="card" style="border: 3px solid maroon;">
+                      <div style="display: flex; align-items: center; justify-content: center; margin-top: 15px">
+                        <img src="./imgs/Karen.jpg" style="height: 100%; width: auto; max-height: 150px;" class="card-img-top" alt="Karen">
+                      </div>
+                      <div class="card-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+                        <h5 class="card-title">Karen Thomas</h5>
+                        <p class="card-text">Pineapple Eddy</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </main>
 
-    <footer>
-
+    <footer style="position:absolute; bottom: 0; left: 0; width: 100%; color: white; background-color: maroon; padding: 15px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-4" style="display: flex; align-items: center; justify-content: center">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="col-8" style="display: flex; flex-direction: column; align-items: center;">
+                    <h5 style="text-align: center;">CrowdDrive through Erie Technology Incubator</h5>
+                    <h6 style="text-align: center;">814-459-6068</h6>
+                    <br>
+                    <h5 style="text-align: center;">CrowdDrive Email</h5>
+                    <h6 style="text-align: center;">crowddrive@gannon.edu</h6>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
