@@ -8,6 +8,7 @@
   <link href="./home.css" rel="stylesheet">
   <link href="./key.css" rel="stylesheet">
   <link href="./project.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/teams/team-2/assets/css/team-2.css">
@@ -28,19 +29,19 @@
       <button class="menu-toggle" id="menu-toggle">☰</button>
       <nav id="navbar">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation" id="nav-item">
               <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</a>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation" id="nav-item">
               <a class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false">About Us</a>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation" id="nav-item">
               <a class="nav-link" id="project-tab" data-bs-toggle="tab" data-bs-target="#project-tab-pane" type="button" role="tab" aria-controls="project-tab-pane" aria-selected="false">Projects</a>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation" id="nav-item">
               <a class="nav-link" id="key-tab" data-bs-toggle="tab" data-bs-target="#key-tab-pane" type="button" role="tab" aria-controls="key-tab-pane" aria-selected="false">Key Players</a>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation" id="nav-item">
               <a class="nav-link" id="testimonial-tab" data-bs-toggle="tab" data-bs-target="#testimonial-tab-pane" type="button" role="tab" aria-controls="testimonial-tab-pane" aria-selected="false">Testimonials</a>
             </li>
           </ul>
@@ -211,16 +212,23 @@
 
         <!-- Projects Tab -->
         <div class="tab-pane fade" id="project-tab-pane" role="tabpanel" aria-labelledby="project-tab" tabindex="0">
-          
-          <div class="container">
-            <div class="row project-title">
-              <div class="col text-center mb-5">
-                 <h1 class="display-4 font-weight-bolder">Our recent project</h1>
-                 <p class="lead">Lorem ipsum dolor sit amet at enim hac integer volutpat maecenas pulvinar. </p>
-              </div>
+          <section class="project-opening">
+            <div class="opening_content">
+              <h1 class="mb-8 display-5 fw-bold">Our Recent Projects</h1>
+              <p class="mb-8 display-7" style="font-size: larger;">At CrowdDrive, we believe in the power of collective effort to bring innovative ideas to life.
+                Our latest projects exemplify this belief, showcasing the transformative impact of community-driven
+                crowdfunding. By partnering with local visionaries in Northwest Pennsylvania, we’ve helped bridge
+                the gap between groundbreaking concepts and tangible success. These projects not only received
+                the crucial pre-seed funding they needed but also gained invaluable market validation, setting the
+                stage for further growth. 
+              </p>
+              <button onclick="window.location.href='#project-section';">Learn More</button>
             </div>
-            <div class="row" style="display: flex; justify-content: center;">         
-                <div class="col-sm-6 col-lg-4 mb-4">
+            <img src="./imgs/recent_project.jpg" alt="Recent Project">
+          </section>
+          <div class="container" id="project-section">
+            <div class="row" style="width: 100%; display: flex; justify-content: center;">         
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
                     <div class="profile-card-4 text-center">
                         <img src="./imgs/kevo_logo.png" class="img img-responsive">
                         <div class="profile-content">
@@ -231,19 +239,19 @@
                                 <div class="col-4">
                                     <div class="profile-overview">
                                         <p>GOAL</p>
-                                        <h4>$10,000</h4>
+                                        <h4 class="display-7">$10,000</h4>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="profile-overview">
                                         <p>RAISED</p>
-                                        <h4>$17,600</h4>
+                                        <h4 class="display-7">$17,600</h4>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="profile-overview">
                                         <p>DONORS</p>
-                                        <h4>149</h4>
+                                        <h4 class="display-7">149</h4>
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
                   <div class="profile-card-4 text-center">
                       <img src="./imgs/pineapple_eddy_logo.png" class="img img-responsive">
                       <div class="profile-content">
@@ -282,7 +290,7 @@
                   </div>
               </div>
 
-              <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="profile-card-4 text-center">
                     <img src="./imgs/eat_your_yard_logo.png" class="img img-responsive">
                     <div class="profile-content">
@@ -313,7 +321,7 @@
                 </div>
               </div>
 
-              <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="profile-card-4 text-center">
                     <img src="./imgs/alex_and_thea_logo.png" class="img img-responsive">
                     <div class="profile-content">
@@ -691,6 +699,10 @@
     document.getElementById('menu-toggle').addEventListener('click', function () {
       const navbar = document.getElementById('navbar');
       navbar.classList.toggle('show');
+    });
+    document.getElementById('nav-item').addEventListener('click', function () {
+      const navbar = document.getElementById('myTab');
+      navbar.toggle('show');
     });
   </script>
 

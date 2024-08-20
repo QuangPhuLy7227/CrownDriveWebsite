@@ -111,17 +111,31 @@
     filter: brightness(110%);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1400px) {
     .profile-card-4 .profile-overview p {
-      font-size: 9px;
+      font-size: 12px;
     }
     
     .profile-card-4 .profile-overview h4 {
-      font-size: 14px;
+      font-size: 16px;
     }
     
     .profile-card-4 .profile-description h5 {
+      font-size: 16px;
+    }
+  }
+
+@media (max-width: 990px) {
+    .profile-card-4 .profile-overview p {
       font-size: 14px;
+    }
+    
+    .profile-card-4 .profile-overview h4 {
+      font-size: 18px;
+    }
+    
+    .profile-card-4 .profile-description h5 {
+      font-size: 20px;
     }
   }
   
@@ -131,4 +145,16 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    .profile-card-4 .profile-overview p {
+        font-size: 12px;
+      }
+      
+      .profile-card-4 .profile-overview h4 {
+        font-size: 16px;
+      }
+      
+      .profile-card-4 .profile-description h5 {
+        font-size: 20px;
+      }
 }
