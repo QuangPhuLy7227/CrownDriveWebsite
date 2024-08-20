@@ -1,10 +1,17 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+/* =============================================== Header =============================================== */
 header {
   width: 100%;
   height: 95px; 
@@ -48,13 +55,18 @@ nav li {
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  position: relative;
+  color: white !important;
+  text-decoration: none !important;
+  position: relative !important;
 }
 
 nav a:hover {
-  color: rgb(158, 158, 158);
+  color: rgb(158, 158, 158) !important;
+  border: none !important;
+}
+
+.nav-link.active {
+  background-color: grey !important;
 }
 
 nav a::after {
@@ -67,10 +79,12 @@ nav a::after {
   left: 50%;
   transform: translateX(-50%);
   transition: 0.5s;
+  border: none !important;
 }
 
 nav a:hover::after {
   width: 100%;
+  border: none !important;
 }
 
 /* Hamburger Menu Button */
@@ -138,42 +152,124 @@ header.scrolled {
   }
 }
 
+/* =============================================== Main =============================================== */
+main {
+  flex: 1;
+  margin-top: 95px;
+  overflow-y: auto;
+  min-height: 100vh;
+}
 
 .opening {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
   width: 100%;
-  height: 100vh; 
-  top: 95px;
-  position: relative;  
-  overflow: hidden; 
-  text-align: center; 
-  background-image: url(./images/ETI_marquee1_compressed.mp4);
+  overflow: hidden;
 }
 
-.opening h1 {
-  color: white;
-  font-size: 2.5rem;
-  font-weight: bold;
-  position: relative; 
+.opening video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.opening .container {
+  position: relative;
+  z-index: 2;
+}
+
+.opening .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
   z-index: 1;
-  margin-top: 20%; 
 }
 
-.opening h3 {
-  border: 2px solid #fff;
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  .opening {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  .opening video {
+    display: none;
+  }
+}
+
+.cssbuttons-io-button {
+  background: red;
   color: white;
-  display: inline-block; 
-  padding: 12px 35px;
-}
-
-.opening h3:hover {
-  background: rgb(223, 3, 3);
-  border: 1px solid rgb(223, 3, 3);
-  transition: 0.5s; 
-}
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em red;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+ }
+ 
+ .cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em red;
+  right: 0.3em;
+  transition: all 0.3s;
+ }
+ 
+ .cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+ }
+ 
+ .cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+ }
+ 
+ .cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+ }
+ 
+ .cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+ }
 
 .background-wrapper {
   background-image: url(./images/ETI_Backgroundimage1.jpg);
-  
+  z-index: 999;
 }
 
 .mission {
@@ -183,22 +279,21 @@ header.scrolled {
   position: relative; 
   top: -100px; 
   display: flex;
+  z-index: 999;
 }
 
-.mission p {
-  font-size: 1.25rem; 
-  line-height: 1.6; 
-}
-
-.mission h3 {
+.mission button {
   border: 2px solid black;
+  font-size: 1.25rem;
+  background-color: #fff;
   display: inline-block;
   padding: 15px 35px;
 }
 
-.mission h3:hover {
-  background: rgb(223, 3, 3);
-  border: 1px solid rgb(223, 3, 3);
+.mission button:hover {
+  background: maroon;
+  border: none;
+  color: #fff;
   transition: 0.5s; 
 }
 
@@ -259,10 +354,10 @@ header.scrolled {
   color: #4a4a4a;
 }
 
-/* Footer Section */
-
+/* =============================================== Footer =============================================== */
 .pg-footer {
   font-family: 'Roboto', sans-serif;
+  margin-top: auto;
 }
 
 .footer {
@@ -284,7 +379,7 @@ header.scrolled {
     width: 100%;
 }
 .footer-wave-path {
-    fill: #fffff2;
+    fill: #ffffff;
 }
 
 .footer-content {
@@ -549,6 +644,10 @@ header.scrolled {
     padding: 40px 15px 1050px;
     position: relative;
   }
+
+  .mission button {
+    font-size: 1rem;
+  }
 }
 @media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
   .footer-content {
@@ -557,6 +656,10 @@ header.scrolled {
     max-width: 1230px;
     padding: 40px 15px 1050px;
     position: relative;
+  }
+
+  .mission button {
+    font-size: 1rem;
   }
 }
 @media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
@@ -600,7 +703,5 @@ header.scrolled {
       width: 49.99%;
   } */
 }
-
-
 
 
