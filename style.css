@@ -139,6 +139,10 @@ header.scrolled {
   }
 } */
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Opening */
 
 .project-opening {
@@ -267,3 +271,4 @@ header.scrolled {
     grid-template-columns: 1fr;
   }
 }
+

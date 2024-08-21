@@ -15,11 +15,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap"
     rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="no-scroll">
   <!-- Header -->
   <header>
     <div class="content">
@@ -29,22 +32,27 @@
       <button class="menu-toggle" id="menu-toggle">☰</button>
       <nav id="navbar">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation" id="nav-item">
-              <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</a>
-            </li>
-            <li class="nav-item" role="presentation" id="nav-item">
-              <a class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false">About Us</a>
-            </li>
-            <li class="nav-item" role="presentation" id="nav-item">
-              <a class="nav-link" id="project-tab" data-bs-toggle="tab" data-bs-target="#project-tab-pane" type="button" role="tab" aria-controls="project-tab-pane" aria-selected="false">Projects</a>
-            </li>
-            <li class="nav-item" role="presentation" id="nav-item">
-              <a class="nav-link" id="key-tab" data-bs-toggle="tab" data-bs-target="#key-tab-pane" type="button" role="tab" aria-controls="key-tab-pane" aria-selected="false">Key Players</a>
-            </li>
-            <li class="nav-item" role="presentation" id="nav-item">
-              <a class="nav-link" id="testimonial-tab" data-bs-toggle="tab" data-bs-target="#testimonial-tab-pane" type="button" role="tab" aria-controls="testimonial-tab-pane" aria-selected="false">Testimonials</a>
-            </li>
-          </ul>
+          <li class="nav-item" role="presentation" id="nav-item">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+              role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item" role="presentation" id="nav-item">
+            <a class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button"
+              role="tab" aria-controls="about-tab-pane" aria-selected="false">About Us</a>
+          </li>
+          <li class="nav-item" role="presentation" id="nav-item">
+            <a class="nav-link" id="project-tab" data-bs-toggle="tab" data-bs-target="#project-tab-pane" type="button"
+              role="tab" aria-controls="project-tab-pane" aria-selected="false">Projects</a>
+          </li>
+          <li class="nav-item" role="presentation" id="nav-item">
+            <a class="nav-link" id="key-tab" data-bs-toggle="tab" data-bs-target="#key-tab-pane" type="button"
+              role="tab" aria-controls="key-tab-pane" aria-selected="false">Key Players</a>
+          </li>
+          <li class="nav-item" role="presentation" id="nav-item">
+            <a class="nav-link" id="testimonial-tab" data-bs-toggle="tab" data-bs-target="#testimonial-tab-pane"
+              type="button" role="tab" aria-controls="testimonial-tab-pane" aria-selected="false">Testimonials</a>
+          </li>
+        </ul>
       </nav>
 
     </div>
@@ -52,323 +60,358 @@
 
   <main>
     <div class="tab-content" id="myTabContent">
-        <!-- Home Tab -->
-        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            <!-- Opening -->
-            <div class="opening">
+      <!-- Home Tab -->
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <!-- Opening -->
+        <div class="opening">
 
-              <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-              <div class="overlay"></div>
-            
-              <!-- The HTML5 video element that will create the background video on the header -->
-              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="./images/ETI_marquee1_compressed.mp4" type="video/mp4">
-              </video>
-            
-              <!-- The header content -->
-              <div class="container h-100">
-                <div class="d-flex h-100 text-center align-items-center">
-                  <div class="w-100 text-white" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                    <h1 class="display-3" style="font-weight: bold;">CrownDrive</h1>
-                    <h3 class="display-8 mb-0" style="font-style: oblique;">Empowering Innovation Through a Thriving Crowdfunding Ecosystem</h3>
-                    <button class="mt-5 cssbuttons-io-button" onclick="window.location.href='#content';"> Get started
-                      <div class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="black"></path></svg>
-                      </div>
-                    </button>
+          <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+          <div class="overlay"></div>
+
+          <!-- The HTML5 video element that will create the background video on the header -->
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./images/ETI_marquee1_compressed.mp4" type="video/mp4">
+          </video>
+
+          <!-- The header content -->
+          <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+              <div class="w-100 text-white"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <h1 class="display-3" style="font-weight: bold;">CrownDrive</h1>
+                <h3 class="display-8 mb-0" style="font-style: oblique;">Empowering Innovation Through a Thriving
+                  Crowdfunding Ecosystem</h3>
+                <button class="mt-5 cssbuttons-io-button" onclick="window.location.href='#content';"> Get started
+                  <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="black"></path>
+                    </svg>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Background -->
-            <div class="background-wrapper">
-                <!-- Mission -->
-                <div class="mission">
-                <div class="mission_content" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                    <h1 id="content" class="mb-8 display-5 text-center fw-bold">Our Mission at CrowdDrive</h1>
-                    <p class="mb-8 display-7 text-center" style="font-size: larger;">In today’s hyper-connected world, geographic boundaries no longer limit the potential of vibrant communities.
-                    CrowdDrive leverages this connectivity to foster a sustainable and impactful crowdfunding ecosystem in
-                    Northwest
-                    Pennsylvania.
-                    Our platform not only connects innovators with backers but also supports the growth of emerging ventures.
-                    By guiding start-ups through crowd-funded projects, we provide a vital source of pre-seed funding and
-                    proof-of-concept.
-                    This support accelerates their development and strengthens the entrepreneurial landscape of our region.
-                    </p>
-                    <button onclick="window.location.href='#features-section';">Learn More</button>
-                </div>
-                <img src="./images/picture1.jpeg" alt="A strong community">
-                </div>
-
-                <!-- Features -->
-                <div id="features-section">
-                <div class="feature">
-                    <div class="center">
-                    <div class="image-container">
-                        <img src="./images/feature-3.jpeg" />
-                    </div>
-                    <div class="content">
-                        <h2>This is CrowdDrive #1</h2>
-                        <h3>Lorem ipsum odor amet, consectetuer adipiscing elit. Tristique nunc malesuada hac senectus placerat laoreet ornare taciti. Curae dolor arcu sit, bibendum praesent ante. Lectus quis himenaeos metus orci a vestibulum habitasse maximus. Cursus dapibus quam habitasse dis donec scelerisque.</h3>
-                    </div>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="center">
-                    <div class="image-container">
-                        <img src="./images/feature-2.jpg" />
-                    </div>
-                    <div class="content">
-                        <h2>This is CrownDrive #2</h2>
-                        <h3>Lorem ipsum odor amet, consectetuer adipiscing elit. Tristique nunc malesuada hac senectus placerat laoreet ornare taciti. Curae dolor arcu sit, bibendum praesent ante. Lectus quis himenaeos metus orci a vestibulum habitasse maximus. Cursus dapibus quam habitasse dis donec scelerisque.</h3>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- About Tab -->
-        <div class="tab-pane fade" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
-          <section class="bsb-about-6 py-3 py-md-5 py-xl-8">
-            <div class="container">
-              <div class="row justify-content-md-center">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                  <h2 class="mb-4 display-5 text-center" style="font-weight: bold; text-decoration: underline rgb(192, 2, 2);">About Us</h2>
-                  <p class="text-secondary mb-5 text-center lead fs-10">CrowdDrive is a collaborative service offering between the Erie Technology Incubator (ETI) and the Dahlkemper School of Business at Gannon University. Our goal is to provide viable pre-seed financing through crowdfunding for start-up companies and entrepreneurs in Northwestern Pennsylvania.</p>
-                  <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark">
-                </div>
-              </div>
-            </div>
-          
-            <div class="container">
-              <div class="row gy-4 gy-lg-0 align-items-lg-center">
-                <div class="col-12 col-lg-6">
-                  <img class="img-fluid rounded border border-dark" loading="lazy" src="./imgs/recent_project.jpg" alt="About 6">
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="row justify-content-xl-end">
-                    <div class="col-12 col-xl-11">
-                      <div class="accordion accordion-flush" id="accordionAbout6">
-                        <div class="accordion-item mb-4 border border-dark">
-                          <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed bg-transparent fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                              How It Works for<span style="color: rgb(192, 2, 2);">&nbspCreators</span>
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionAbout6">
-                            <div class="accordion-body">
-                              <p>Creators are the start-up companies and entrepreneurs in Northwestern Pennsylvania with unique value propositions. We help them:</p>
-                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item">•	Analyze their business and ideas to determine their ability to complete a successful crowdfunding campaign.</li>
-                                <li class="list-group-item">•	Recommend the most appropriate crowdfunding source.</li>
-                                <li class="list-group-item">•	Plan, develop, and manage crowdfunding projects.</li>
-                                <li class="list-group-item">•	Develop launch events.</li>
-                                <li class="list-group-item">•	Connect creators with our donor base.</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item mb-4 border border-dark">
-                          <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed bg-transparent fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              How It Works for<span style="color: rgb(192, 2, 2);">&nbspDonors</span>
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionAbout6">
-                            <div class="accordion-body">
-                              <p>Donors are true believers of our startup community, whether they reside in Northwestern Pennsylvania or not. We work with them to:</p>
-                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item">•	Determine their interests to match them with creators.</li>
-                                <li class="list-group-item">•	Promote the story of the entrepreneurial community in Northwest Pennsylvania.</li>
-                                <li class="list-group-item">•	Hold events for donors and potential donors.</li>
-                                <li class="list-group-item">•	Create leaders and influencers among donors.</li>
-                                <li class="list-group-item">•	Cultivate donors through ongoing engagement.</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item mb-4 border border-dark">
-                          <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed bg-transparent fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              How We Do It
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionAbout6">
-                            <div class="accordion-body">
-                              CrowdDrive is funded through the Erie Community Foundation to establish the CrowdDrive infrastructure and business model. Creators who engage with CrowdDrive to develop and manage crowdfunding campaigns are responsible for $1,500 entry fee for the campaign, 5% of project revenue and 25% of the stretch amount.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <!-- Projects Tab -->
-        <div class="tab-pane fade" id="project-tab-pane" role="tabpanel" aria-labelledby="project-tab" tabindex="0">
-          <section class="project-opening">
-            <div class="opening_content">
-              <h1 class="mb-8 display-5 fw-bold">Our Recent Projects</h1>
-              <p class="mb-8 display-7" style="font-size: larger;">At CrowdDrive, we believe in the power of collective effort to bring innovative ideas to life.
-                Our latest projects exemplify this belief, showcasing the transformative impact of community-driven
-                crowdfunding. By partnering with local visionaries in Northwest Pennsylvania, we’ve helped bridge
-                the gap between groundbreaking concepts and tangible success. These projects not only received
-                the crucial pre-seed funding they needed but also gained invaluable market validation, setting the
-                stage for further growth. 
-              </p>
-              <button onclick="window.location.href='#project-section';">Learn More</button>
-            </div>
-            <img src="./imgs/recent_project.jpg" alt="Recent Project">
-          </section>
-          <div class="container" id="project-section">
-            <div class="row" style="width: 100%; display: flex; justify-content: center;">         
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <div class="profile-card-4 text-center">
-                        <img src="./imgs/kevo_logo.png" class="img img-responsive">
-                        <div class="profile-content">
-                            <div class="profile-description">
-                              <h5>KEVO Cold Brew Coffee, Simplified</h5>
-                            </div>
-                            <div class="row stats">
-                                <div class="col-4">
-                                    <div class="profile-overview">
-                                        <p>GOAL</p>
-                                        <h4 class="display-7">$10,000</h4>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="profile-overview">
-                                        <p>RAISED</p>
-                                        <h4 class="display-7">$17,600</h4>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="profile-overview">
-                                        <p>DONORS</p>
-                                        <h4 class="display-7">149</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
-                  <div class="profile-card-4 text-center">
-                      <img src="./imgs/pineapple_eddy_logo.png" class="img img-responsive">
-                      <div class="profile-content">
-                          <div class="profile-description">
-                            <h5>Pineapple Eddy</h5>
-                          </div>
-                          <div class="row stats">
-                              <div class="col-4">
-                                  <div class="profile-overview">
-                                      <p>GOAL</p>
-                                      <h4>$10,000</h4>
-                                  </div>
-                              </div>
-                              <div class="col-4">
-                                  <div class="profile-overview">
-                                      <p>RAISED</p>
-                                      <h4>$13,147</h4>
-                                  </div>
-                              </div>
-                              <div class="col-4">
-                                  <div class="profile-overview">
-                                      <p>DONORS</p>
-                                      <h4>181</h4>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="profile-card-4 text-center">
-                    <img src="./imgs/eat_your_yard_logo.png" class="img img-responsive">
-                    <div class="profile-content">
-                        <div class="profile-description">
-                          <h5>Pineapple Eddy</h5>
-                        </div>
-                        <div class="row stats">
-                            <div class="col-4">
-                                <div class="profile-overview">
-                                    <p>GOAL</p>
-                                    <h4>$10,000</h4>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="profile-overview">
-                                    <p>RAISED</p>
-                                    <h4>$13,147</h4>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="profile-overview">
-                                    <p>DONORS</p>
-                                    <h4>181</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="profile-card-4 text-center">
-                    <img src="./imgs/alex_and_thea_logo.png" class="img img-responsive">
-                    <div class="profile-content">
-                        <div class="profile-description">
-                          <h5>Pineapple Eddy</h5>
-                        </div>
-                        <div class="row stats">
-                            <div class="col-4">
-                                <div class="profile-overview">
-                                    <p>GOAL</p>
-                                    <h4>$10,000</h4>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="profile-overview">
-                                    <p>RAISED</p>
-                                    <h4>$13,147</h4>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="profile-overview">
-                                    <p>DONORS</p>
-                                    <h4>181</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Key Player Tab -->
-        <div class="tab-pane fade" id="key-tab-pane" role="tabpanel" aria-labelledby="key-tab" tabindex="0">
-          <div class="container-fluid" style="width: 100%; margin-top: 15px; margin-bottom: 15px">
-            <div class="row" style="width: 90%; margin: auto;">
-              <div class="col-12 col-md-4 title-column">
-                <h1 class="key-players-title">Key Players</h1>
+        <!-- Background -->
+        <div class="background-wrapper">
+          <!-- Mission -->
+          <div class="mission">
+            <div class="mission_content"
+              style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <h1 id="content" class="mb-8 display-5 text-center fw-bold">Our Mission at CrowdDrive</h1>
+              <p class="mb-8 display-7 text-center" style="font-size: larger;">In today’s hyper-connected world,
+                geographic boundaries no longer limit the potential of vibrant communities.
+                CrowdDrive leverages this connectivity to foster a sustainable and impactful crowdfunding ecosystem in
+                Northwest
+                Pennsylvania.
+                Our platform not only connects innovators with backers but also supports the growth of emerging
+                ventures.
+                By guiding start-ups through crowd-funded projects, we provide a vital source of pre-seed funding and
+                proof-of-concept.
+                This support accelerates their development and strengthens the entrepreneurial landscape of our region.
+              </p>
+              <button onclick="window.location.href='#features-section';">Learn More</button>
+            </div>
+            <img src="./images/picture1.jpeg" alt="A strong community">
+          </div>
+
+          <!-- Features -->
+          <div id="features-section">
+            <div class="feature">
+              <div class="center">
+                <div class="image-container">
+                  <img src="./images/feature-3.jpeg" />
+                </div>
+                <div class="content">
+                  <h2>This is CrowdDrive #1</h2>
+                  <h3>Lorem ipsum odor amet, consectetuer adipiscing elit. Tristique nunc malesuada hac senectus
+                    placerat laoreet ornare taciti. Curae dolor arcu sit, bibendum praesent ante. Lectus quis himenaeos
+                    metus orci a vestibulum habitasse maximus. Cursus dapibus quam habitasse dis donec scelerisque.</h3>
+                </div>
               </div>
-              <div class="col-12 col-md-8 cards-column">
-                <div class="blog-card">
-                  <div class="meta">
-                    <div class="photo" style="background-image: url(./imgs/eti.png)"></div>
-                    <ul class="details">
-                      <li class="author"><a href="#">Erie Technology Incubator</a></li>
-                      <!-- <li class="date">Aug. 24, 2015</li>
+            </div>
+            <div class="feature">
+              <div class="center">
+                <div class="image-container">
+                  <img src="./images/feature-2.jpg" />
+                </div>
+                <div class="content">
+                  <h2>This is CrownDrive #2</h2>
+                  <h3>Lorem ipsum odor amet, consectetuer adipiscing elit. Tristique nunc malesuada hac senectus
+                    placerat laoreet ornare taciti. Curae dolor arcu sit, bibendum praesent ante. Lectus quis himenaeos
+                    metus orci a vestibulum habitasse maximus. Cursus dapibus quam habitasse dis donec scelerisque.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Tab -->
+      <div class="tab-pane fade" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
+        <section class="bsb-about-6 py-3 py-md-5 py-xl-8">
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                <h2 class="mb-4 display-5 text-center"
+                  style="font-weight: bold; text-decoration: underline rgb(192, 2, 2);">About Us</h2>
+                <p class="text-secondary mb-5 text-center lead fs-10">CrowdDrive is a collaborative service offering
+                  between the Erie Technology Incubator (ETI) and the Dahlkemper School of Business at Gannon
+                  University. Our goal is to provide viable pre-seed financing through crowdfunding for start-up
+                  companies and entrepreneurs in Northwestern Pennsylvania.</p>
+                <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark">
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row gy-4 gy-lg-0 align-items-lg-center">
+              <div class="col-12 col-lg-6">
+                <img class="img-fluid rounded border border-dark" loading="lazy" src="./imgs/recent_project.jpg"
+                  alt="About 6">
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="row justify-content-xl-end">
+                  <div class="col-12 col-xl-11">
+                    <div class="accordion accordion-flush" id="accordionAbout6">
+                      <div class="accordion-item mb-4 border border-dark">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed bg-transparent fs-4 fw-bold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            How It Works for<span style="color: rgb(192, 2, 2);">&nbspCreators</span>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionAbout6">
+                          <div class="accordion-body">
+                            <p>Creators are the start-up companies and entrepreneurs in Northwestern Pennsylvania with
+                              unique value propositions. We help them:</p>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">• Analyze their business and ideas to determine their ability
+                                to complete a successful crowdfunding campaign.</li>
+                              <li class="list-group-item">• Recommend the most appropriate crowdfunding source.</li>
+                              <li class="list-group-item">• Plan, develop, and manage crowdfunding projects.</li>
+                              <li class="list-group-item">• Develop launch events.</li>
+                              <li class="list-group-item">• Connect creators with our donor base.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item mb-4 border border-dark">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed bg-transparent fs-4 fw-bold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            How It Works for<span style="color: rgb(192, 2, 2);">&nbspDonors</span>
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionAbout6">
+                          <div class="accordion-body">
+                            <p>Donors are true believers of our startup community, whether they reside in Northwestern
+                              Pennsylvania or not. We work with them to:</p>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">• Determine their interests to match them with creators.</li>
+                              <li class="list-group-item">• Promote the story of the entrepreneurial community in
+                                Northwest Pennsylvania.</li>
+                              <li class="list-group-item">• Hold events for donors and potential donors.</li>
+                              <li class="list-group-item">• Create leaders and influencers among donors.</li>
+                              <li class="list-group-item">• Cultivate donors through ongoing engagement.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item mb-4 border border-dark">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed bg-transparent fs-4 fw-bold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            How We Do It
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                          data-bs-parent="#accordionAbout6">
+                          <div class="accordion-body">
+                            CrowdDrive is funded through the Erie Community Foundation to establish the CrowdDrive
+                            infrastructure and business model. Creators who engage with CrowdDrive to develop and manage
+                            crowdfunding campaigns are responsible for $1,500 entry fee for the campaign, 5% of project
+                            revenue and 25% of the stretch amount.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Projects Tab -->
+      <div class="tab-pane fade" id="project-tab-pane" role="tabpanel" aria-labelledby="project-tab" tabindex="0">
+        <section class="project-opening">
+          <div class="opening_content">
+            <h1 class="mb-8 display-5 fw-bold">Our Recent Projects</h1>
+            <p class="mb-8 display-7" style="font-size: larger;">At CrowdDrive, we believe in the power of collective
+              effort to bring innovative ideas to life.
+              Our latest projects exemplify this belief, showcasing the transformative impact of community-driven
+              crowdfunding. By partnering with local visionaries in Northwest Pennsylvania, we’ve helped bridge
+              the gap between groundbreaking concepts and tangible success. These projects not only received
+              the crucial pre-seed funding they needed but also gained invaluable market validation, setting the
+              stage for further growth.
+            </p>
+            <button onclick="window.location.href='#project-section';">Learn More</button>
+          </div>
+          <img src="./imgs/recent_project.jpg" alt="Recent Project">
+        </section>
+        <div class="container" id="project-section">
+          <div class="row" style="width: 100%; display: flex; justify-content: center;">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="profile-card-4 text-center">
+                <img src="./imgs/kevo_logo.png" class="img img-responsive">
+                <div class="profile-content">
+                  <div class="profile-description">
+                    <h5>KEVO Cold Brew Coffee, Simplified</h5>
+                  </div>
+                  <div class="row stats">
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>GOAL</p>
+                        <h4 class="display-7">$10,000</h4>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>RAISED</p>
+                        <h4 class="display-7">$17,600</h4>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>DONORS</p>
+                        <h4 class="display-7">149</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="profile-card-4 text-center">
+                <img src="./imgs/pineapple_eddy_logo.png" class="img img-responsive">
+                <div class="profile-content">
+                  <div class="profile-description">
+                    <h5>Pineapple Eddy</h5>
+                  </div>
+                  <div class="row stats">
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>GOAL</p>
+                        <h4>$10,000</h4>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>RAISED</p>
+                        <h4>$13,147</h4>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>DONORS</p>
+                        <h4>181</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="profile-card-4 text-center">
+                <img src="./imgs/eat_your_yard_logo.png" class="img img-responsive">
+                <div class="profile-content">
+                  <div class="profile-description">
+                    <h5>Pineapple Eddy</h5>
+                  </div>
+                  <div class="row stats">
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>GOAL</p>
+                        <h4>$10,000</h4>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>RAISED</p>
+                        <h4>$13,147</h4>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>DONORS</p>
+                        <h4>181</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="profile-card-4 text-center">
+                <img src="./imgs/alex_and_thea_logo.png" class="img img-responsive">
+                <div class="profile-content">
+                  <div class="profile-description">
+                    <h5>Pineapple Eddy</h5>
+                  </div>
+                  <div class="row stats">
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>GOAL</p>
+                        <h4>$10,000</h4>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>RAISED</p>
+                        <h4>$13,147</h4>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="profile-overview">
+                        <p>DONORS</p>
+                        <h4>181</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Player Tab -->
+      <div class="tab-pane fade" id="key-tab-pane" role="tabpanel" aria-labelledby="key-tab" tabindex="0">
+        <div class="container-fluid" style="width: 100%; margin-top: 15px; margin-bottom: 15px">
+          <div class="row" style="width: 90%; margin: auto;">
+            <div class="col-12 col-md-4 title-column">
+              <h1 class="key-players-title">Key Players</h1>
+            </div>
+            <div class="col-12 col-md-8 cards-column">
+              <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./imgs/eti.png)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">Erie Technology Incubator</a></li>
+                    <!-- <li class="date">Aug. 24, 2015</li>
                       <li class="tags">
                         <ul>
                           <li><a href="#">Learn</a></li>
@@ -377,24 +420,27 @@
                           <li><a href="#">CSS</a></li>
                         </ul>
                       </li> -->
-                    </ul>
-                  </div>
-                  <div class="description">
-                    <h1 style="font-weight: bold;">Erie Technology Incubator</h1>
-                    <h2>Erie, PA</h2>
-                    <p> The Erie Technology Incubator serves Northwest Pennsylvania with a unique blend of strategic guidance, dedicated mentor teams, 1:1 coaching, and networking opportunities. It provides early-stage technology-enabled companies with critical resources and support to guide them through key milestones and phases of their entrepreneurial journey.</p>
-                    <p class="read-more">
-                      <a href="#">Learn More</a>
-                    </p>
-                  </div>
+                  </ul>
                 </div>
-    
-                <div class="blog-card alt">
-                  <div class="meta">
-                    <div class="photo" style="background-image: url(./imgs/gannon.png)"></div>
-                    <ul class="details">
-                      <li class="author"><a href="#">The Dahlkemper School of Business at Gannon University</a></li>
-                      <!-- <li class="date">July. 15, 2015</li>
+                <div class="description">
+                  <h1 style="font-weight: bold;">Erie Technology Incubator</h1>
+                  <h2>Erie, PA</h2>
+                  <p> The Erie Technology Incubator serves Northwest Pennsylvania with a unique blend of strategic
+                    guidance, dedicated mentor teams, 1:1 coaching, and networking opportunities. It provides
+                    early-stage technology-enabled companies with critical resources and support to guide them through
+                    key milestones and phases of their entrepreneurial journey.</p>
+                  <p class="read-more">
+                    <a href="#">Learn More</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="blog-card alt">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./imgs/gannon.png)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">The Dahlkemper School of Business at Gannon University</a></li>
+                    <!-- <li class="date">July. 15, 2015</li>
                       <li class="tags">
                         <ul>
                           <li><a href="#">Learn</a></li>
@@ -402,24 +448,27 @@
                           <li><a href="#">JavaScript</a></li>
                         </ul>
                       </li> -->
-                    </ul>
-                  </div>
-                  <div class="description">
-                    <h1 style="font-weight: bold;">Gannon University</h1>
-                    <h2>Dahlkemper School of Business</h2>
-                    <p>The Dahlkemper School of Business at Gannon University serves as a center of ethical business leadership and innovation to provide an excellent education in all areas of business from a values-centered and global perspective and to develop leaders to transform the world of business.</p>
-                    <p class="read-more">
-                      <a href="#">Learn More</a>
-                    </p>
-                  </div>
+                  </ul>
                 </div>
-    
-                <div class="blog-card">
-                  <div class="meta">
-                    <div class="photo" style="background-image: url(./imgs/ecf.png)"></div>
-                    <ul class="details">
-                      <li class="author"><a href="#">The Erie Community Foundation </a></li>
-                      <!-- <li class="date">Aug. 24, 2015</li>
+                <div class="description">
+                  <h1 style="font-weight: bold;">Gannon University</h1>
+                  <h2>Dahlkemper School of Business</h2>
+                  <p>The Dahlkemper School of Business at Gannon University serves as a center of ethical business
+                    leadership and innovation to provide an excellent education in all areas of business from a
+                    values-centered and global perspective and to develop leaders to transform the world of business.
+                  </p>
+                  <p class="read-more">
+                    <a href="#">Learn More</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./imgs/ecf.png)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">The Erie Community Foundation </a></li>
+                    <!-- <li class="date">Aug. 24, 2015</li>
                       <li class="tags">
                         <ul>
                           <li><a href="#">Learn</a></li>
@@ -428,272 +477,218 @@
                           <li><a href="#">CSS</a></li>
                         </ul>
                       </li> -->
-                    </ul>
-                  </div>
-                  <div class="description">
-                    <h1 style="font-weight: bold;">Erie Community Foundation </h1>
-                    <h2>Erie, PA</h2>
-                    <p>CrowdDrive is funded through an Erie Community Foundation Helping Today grant. The Erie Community Foundation is a collection of 800 charitable endowments operating under the administrative umbrella of a single public charity. The Foundation’s mission is to inspire, engage, and empower donors and communities across the region, today and tomorrow.</p>
-                    <p class="read-more">
-                      <a href="#">Learn More</a>
-                    </p>
-                  </div>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1 style="font-weight: bold;">Erie Community Foundation </h1>
+                  <h2>Erie, PA</h2>
+                  <p>CrowdDrive is funded through an Erie Community Foundation Helping Today grant. The Erie Community
+                    Foundation is a collection of 800 charitable endowments operating under the administrative umbrella
+                    of a single public charity. The Foundation’s mission is to inspire, engage, and empower donors and
+                    communities across the region, today and tomorrow.</p>
+                  <p class="read-more">
+                    <a href="#">Learn More</a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Testimonials Tab -->
-        <div class="tab-pane fade" id="testimonial-tab-pane" role="tabpanel" aria-labelledby="testimonial-tab" tabindex="0">
-          <section class="py-3 py-md-5 py-xl-8">
-            <div class="container">
-              <div class="row justify-content-md-center">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                  <h2 class="fs-6 text-secondary mb-2 text-uppercase text-center">CrownDrive</h2>
-                  <p class="display-5 mb-4 mb-md-5 text-center" style="font-weight: bold;">Testimonial</p>
-                  <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" style="background-color: maroon;">
-                </div>
+      <!-- Testimonials Tab -->
+      <div class="tab-pane fade" id="testimonial-tab-pane" role="tabpanel" aria-labelledby="testimonial-tab"
+        tabindex="0">
+        <section class="py-3 py-md-5 py-xl-8">
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                <h2 class="fs-6 text-secondary mb-2 text-uppercase text-center">CrownDrive</h2>
+                <p class="display-5 mb-4 mb-md-5 text-center" style="font-weight: bold;">Testimonial</p>
+                <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" style="background-color: maroon;">
               </div>
             </div>
-          
-            <div class="container overflow-hidden">
-              <div class="row gy-4 gy-lg-0">
-                <div class="col-12 col-lg-4">
-                  <div class="card border-0">
-                    <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                      <a href="#!">
-                        <img class="img-fluid bsb-scale bsb-hover-scale-up" style="width: 100%; overflow: hidden;" loading="lazy" src="./imgs/Paul.jpg" alt="Paul McMahon">
-                      </a>
-                      <figcaption>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-                        </svg>
-                        <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
-                      </figcaption>
-                    </figure>
-                    <div class="card-body border bg-white p-4">
-                      <h2 class="card-title h4 fw-bold mb-3">Paul McMahon</h2>
-                      <p class="card-text text-secondary">Define the product vision and strategy and conduct user research to understand the needs of the target market.</p>
-                    </div>
-                    <div class="card-footer border border-top-0 bg-white p-4">
-                      <ul class="nav mb-0 bsb-nav-sep">
-                        <li class="nav-item text-secondary">
-                          <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="maroon" class="bi bi-lightbulb text-primary" viewBox="0 0 16 16">
-                              <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
-                            </svg>
-                            <span class="ms-2 fs-6">Product Manager</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+          </div>
+
+          <div class="container overflow-hidden">
+            <div class="row gy-4 gy-lg-0">
+              <div class="col-12 col-lg-4">
+                <div class="card border-0">
+                  <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+                    <a href="#!">
+                      <img class="img-fluid bsb-scale bsb-hover-scale-up" style="width: 100%; overflow: hidden;"
+                        loading="lazy" src="./imgs/new_paul.jpeg" alt="Paul McMahon">
+                    </a>
+                    <figcaption>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                      </svg>
+                      <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+                    </figcaption>
+                  </figure>
+                  <div class="card-body border bg-white p-4">
+                    <h2 class="card-title h4 fw-bold mb-3">Paul McMahon</h2>
+                    <p class="card-text text-secondary">Define the product vision and strategy and conduct user research
+                      to understand the needs of the target market.</p>
                   </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="card border-0">
-                    <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                      <a href="#!">
-                        <img class="img-fluid bsb-scale bsb-hover-scale-up" style="width: 100%; overflow-y: hidden;" loading="lazy" src="./imgs/Tess.jpg" alt="Tess Frawley">
-                      </a>
-                      <figcaption>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-                        </svg>
-                        <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
-                      </figcaption>
-                    </figure>
-                    <div class="card-body border bg-white p-4">
-                      <h2 class="card-title h4 fw-bold mb-3">Tess Frawley</h2>
-                      <p class="card-text text-secondary">Analyze financial statements to assess a company's financial performance and develop financial models for future performance.</p>
-                    </div>
-                    <div class="card-footer border border-top-0 bg-white p-4">
-                      <ul class="nav mb-0 bsb-nav-sep">
-                        <li class="nav-item text-secondary">
-                          <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="maroon" class="bi bi-layers text-primary" viewBox="0 0 16 16">
-                              <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
-                            </svg>
-                            <span class="ms-2 fs-6">Financial Analyst</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="card border-0">
-                    <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                      <a href="#!">
-                        <img class="img-fluid bsb-scale bsb-hover-scale-up" style="width: 100%; overflow-y: hidden;" loading="lazy" src="./imgs/Karen.jpg" alt="Karen Thomas">
-                      </a>
-                      <figcaption>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-                        </svg>
-                        <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
-                      </figcaption>
-                    </figure>
-                    <div class="card-body border bg-white p-4">
-                      <h2 class="card-title h4 fw-bold mb-3">Karen Thomas</h2>
-                      <p class="card-text text-secondary">Develop and oversee the visual concept for a product or brand and direct and review the work of other creative professionals.</p>
-                    </div>
-                    <div class="card-footer border border-top-0 bg-white p-4">
-                      <ul class="nav mb-0 bsb-nav-sep">
-                        <li class="nav-item text-secondary">
-                          <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="maroon" class="bi bi-brush text-primary" viewBox="0 0 16 16">
-                              <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z" />
-                            </svg>
-                            <span class="ms-2 fs-6">Art Director</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                  <div class="card-footer border border-top-0 bg-white p-4">
+                    <ul class="nav mb-0 bsb-nav-sep">
+                      <li class="nav-item text-secondary">
+                        <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="maroon"
+                            class="bi bi-lightbulb text-primary" viewBox="0 0 16 16">
+                            <path
+                              d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+                          </svg>
+                          <span class="ms-2 fs-6">Product Manager</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
+              <div class="col-12 col-lg-4">
+                <div class="card border-0">
+                  <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+                    <a href="#!">
+                      <img class="img-fluid bsb-scale bsb-hover-scale-up" style="width: 100%; overflow-y: hidden;"
+                        loading="lazy" src="./imgs/new_tess.jpg" alt="Tess Frawley">
+                    </a>
+                    <figcaption>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                      </svg>
+                      <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+                    </figcaption>
+                  </figure>
+                  <div class="card-body border bg-white p-4">
+                    <h2 class="card-title h4 fw-bold mb-3">Tess Frawley</h2>
+                    <p class="card-text text-secondary">Analyze financial statements to assess a company's financial
+                      performance and develop financial models for future performance.</p>
+                  </div>
+                  <div class="card-footer border border-top-0 bg-white p-4">
+                    <ul class="nav mb-0 bsb-nav-sep">
+                      <li class="nav-item text-secondary">
+                        <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="maroon"
+                            class="bi bi-layers text-primary" viewBox="0 0 16 16">
+                            <path
+                              d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
+                          </svg>
+                          <span class="ms-2 fs-6">Financial Analyst</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card border-0">
+                  <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+                    <a href="#!">
+                      <img class="img-fluid bsb-scale bsb-hover-scale-up" style="width: 100%; overflow-y: hidden;"
+                        loading="lazy" src="./imgs/new_karen.jpg" alt="Karen Thomas">
+                    </a>
+                    <figcaption>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                      </svg>
+                      <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+                    </figcaption>
+                  </figure>
+                  <div class="card-body border bg-white p-4">
+                    <h2 class="card-title h4 fw-bold mb-3">Karen Thomas</h2>
+                    <p class="card-text text-secondary">Develop and oversee the visual concept for a product or brand
+                      and direct and review the work of other creative professionals.</p>
+                  </div>
+                  <div class="card-footer border border-top-0 bg-white p-4">
+                    <ul class="nav mb-0 bsb-nav-sep">
+                      <li class="nav-item text-secondary">
+                        <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="maroon"
+                            class="bi bi-brush text-primary" viewBox="0 0 16 16">
+                            <path
+                              d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z" />
+                          </svg>
+                          <span class="ms-2 fs-6">Art Director</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
 
   <!-- Footer -->
-  <div class="pg-footer">
-    <footer class="footer">
-      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-        <path class="footer-wave-path"
-          d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
-        </path>
-      </svg>
-      <div class="footer-content">
-        <div class="footer-content-column">
-          <div class="footer-logo">
-            <a class="footer-logo-link" href="#">
-              <span class="hidden-link-text">LOGO</span>
-              <h1>CrowdDrive</h1>
-            </a>
-          </div>
-        </div>
-        <div class="footer-content-column">
-          <div class="footer-menu">
-            <h2 class="footer-menu-name"> Company</h2>
-            <ul id="menu-company" class="footer-menu-list">
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Contact</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
-                <a href="#">News</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Careers</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-menu">
-            <h2 class="footer-menu-name"> Legal</h2>
-            <ul id="menu-legal" class="footer-menu-list">
-              <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-                <a href="#">Privacy Notice</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-content-column">
-          <div class="footer-menu">
-            <h2 class="footer-menu-name"> Quick Links</h2>
-            <ul id="menu-quick-links" class="footer-menu-list">
-              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Support Center</a>
-              </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Service Status</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Security</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Blog</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-                <a href="#">Customers</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Reviews</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-content-column">
-          <div class="footer-call-to-action">
-            <h2 class="footer-call-to-action-title"> Let's Chat</h2>
-            <p class="footer-call-to-action-description"> Have a support question?</p>
-            <a class="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a>
-          </div>
-          <div class="footer-call-to-action">
-            <h2 class="footer-call-to-action-title"> You Call Us</h2>
-            <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:0124-64XXXX"
-                target="_self"> 0124-64XXXX </a></p>
-          </div>
-        </div>
-        <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 236 54">
-            <path class="footer-social-amoeba-path"
-              d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z">
-            </path>
-          </svg>
-          <a class="footer-social-link linkedin" href="#" target="_blank">
-            <span class="hidden-link-text">Linkedin</span>
-            <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="footer-social-icon-path"
-                d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z">
-              </path>
-            </svg>
-          </a>
-          <a class="footer-social-link twitter" href="#" target="_blank">
-            <span class="hidden-link-text">Twitter</span>
-            <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-              <path class="footer-social-icon-path"
-                d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 ">
-              </path>
-            </svg>
-          </a>
-          <a class="footer-social-link youtube" href="#" target="_blank">
-            <span class="hidden-link-text">Youtube</span>
-            <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="footer-social-icon-path"
-                d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z">
-              </path>
-            </svg>
-          </a>
-          <a class="footer-social-link github" href="#" target="_blank">
-            <span class="hidden-link-text">Github</span>
-            <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-              <path class="footer-social-icon-path"
-                d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z ">
-              </path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="footer-copyright-wrapper">
-          <p class="footer-copyright-text">
-            <a class="footer-copyright-link" href="#" target="_self"> ©2024. | Designed By: Gannon ETI. | All rights
-              reserved. </a>
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+  <footer style="background-color: #deded5;">
+    <div class="p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #761a2c;">CrowdDrive</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
           </p>
         </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #761a2c;">links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">Frequently Asked Questions</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">Delivery</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">Pricing</a>
+            </li>
+            <li>
+              <a href="#!" style="color: #4f4f4f;">Where we deliver?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #761a2c;">opening hours</h5>
+          <table class="table" style="color: #4f4f4f; border-color: #666;">
+            <tbody>
+              <tr>
+                <td>Mon - Fri:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun:</td>
+                <td>8am - 1am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </footer>
-  </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+
 
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function () {
