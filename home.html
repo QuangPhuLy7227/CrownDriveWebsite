@@ -131,18 +131,56 @@
 
         <!-- About Tab -->
         <div class="tab-pane fade" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
-          <section class="bsb-about-6 py-3 py-md-5 py-xl-8">
-            <div class="container">
-              <div class="row justify-content-md-center">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                  <h2 class="mb-4 display-5 text-center" style="font-weight: bold; text-decoration: underline rgb(192, 2, 2);">About Us</h2>
-                  <p class="text-secondary mb-5 text-center lead fs-10">CrowdDrive is a collaborative service offering between the Erie Technology Incubator (ETI) and the Dahlkemper School of Business at Gannon University. Our goal is to provide viable pre-seed financing through crowdfunding for start-up companies and entrepreneurs in Northwestern Pennsylvania.</p>
-                  <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark">
+          <section class="bsb-about-6 pb-3 pb-md-5 pb-xl-8">
+            <div class="pt-3 pt-md-5 pt-xl-8" style="background-image: url(./images/background.jpg); object-fit:cover;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-10 col-lg-8">
+                    <h3 class="display-5 mb-2 text-uppercase fw-bold" style="color: white;">About Us</h3>
+                    <h2 class="fs-4 mb-4" style="font-weight: normal; color: white;">CrowdDrive is a collaborative service offering between the Erie Technology Incubator (ETI) and the Dahlkemper School of Business at Gannon University. Our goal is to provide viable pre-seed financing through crowdfunding for start-up companies and entrepreneurs in Northwestern Pennsylvania. </h2>
+                    <button type="button" class="about-button mb-3 mb-md-4 mb-xl-5" onclick="window.location.href='#how-it-works';">How It Works</button>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="container">
+                <div class="row gy-3 gy-md-4 gy-lg-0">
+                  <div class="col-12 col-lg-6">
+                    <div class="card bg-light p-3 m-0">
+                      <div class="row gy-3 gy-md-0 align-items-md-center">
+                        <div class="col-md-5">
+                          <img src="./assets/img/about-img-2.jpg" class="img-fluid rounded-start" alt="Why Choose Us?">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="card-body p-0">
+                            <h2 class="card-title h4 mb-3">Why Choose Us?</h2>
+                            <p class="card-text lead">With years of experience and deep industry knowledge, we have a proven track record of success and are pushing ourselves to stay ahead of the curve.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="card bg-light p-3 m-0">
+                      <div class="row gy-3 gy-md-0 align-items-md-center">
+                        <div class="col-md-5">
+                          <img src="./assets/img/about-img-1.jpg" class="img-fluid rounded-start" alt="Visionary Team">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="card-body p-0">
+                            <h2 class="card-title h4 mb-3">Visionary Team</h2>
+                            <p class="card-text lead">With a team of visionary engineers, developers, and creative minds, we embark on a journey to transform complex challenges into ingenious technological solutions.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <div style="height: 150px; overflow: hidden; background-image: url(./images/background.jpg); border: none;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C145.31,143.59 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg></div>
           
-            <div class="container">
+            <div class="container" id="how-it-works">
               <div class="row gy-4 gy-lg-0 align-items-lg-center">
                 <div class="col-12 col-lg-6">
                   <img class="img-fluid rounded border border-dark" loading="lazy" src="./imgs/recent_project.jpg" alt="About 6">
@@ -226,63 +264,32 @@
             </div>
             <img src="./imgs/recent_project.jpg" alt="Recent Project">
           </section>
-          <div class="container" id="project-section">
-            <div class="row" style="width: 100%; display: flex; justify-content: center;">         
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <div class="profile-card-4 text-center">
-                        <img src="./imgs/kevo_logo.png" class="img img-responsive">
-                        <div class="profile-content">
-                            <div class="profile-description">
-                              <h5>KEVO Cold Brew Coffee, Simplified</h5>
-                            </div>
-                            <div class="row stats">
-                                <div class="col-4">
-                                    <div class="profile-overview">
-                                        <p>GOAL</p>
-                                        <h4 class="display-7">$10,000</h4>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="profile-overview">
-                                        <p>RAISED</p>
-                                        <h4 class="display-7">$17,600</h4>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="profile-overview">
-                                        <p>DONORS</p>
-                                        <h4 class="display-7">149</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="row" id="project-section" style="width: 100%; display: flex; justify-content: center; margin-left: 0px;margin-right: 0px;">         
+              <div class="col-12 col-md-6 col-lg-3 mb-4">
                   <div class="profile-card-4 text-center">
-                      <img src="./imgs/pineapple_eddy_logo.png" class="img img-responsive">
+                      <img src="./imgs/kevo_logo.png" class="img img-responsive">
                       <div class="profile-content">
                           <div class="profile-description">
-                            <h5>Pineapple Eddy</h5>
+                            <h5>KEVO Cold Brew Coffee, Simplified</h5>
                           </div>
                           <div class="row stats">
                               <div class="col-4">
                                   <div class="profile-overview">
                                       <p>GOAL</p>
-                                      <h4>$10,000</h4>
+                                      <h4 class="display-7">$10,000</h4>
                                   </div>
                               </div>
                               <div class="col-4">
                                   <div class="profile-overview">
                                       <p>RAISED</p>
-                                      <h4>$13,147</h4>
+                                      <h4 class="display-7">$17,600</h4>
                                   </div>
                               </div>
                               <div class="col-4">
                                   <div class="profile-overview">
                                       <p>DONORS</p>
-                                      <h4>181</h4>
+                                      <h4 class="display-7">149</h4>
                                   </div>
                               </div>
                           </div>
@@ -292,7 +299,7 @@
 
               <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="profile-card-4 text-center">
-                    <img src="./imgs/eat_your_yard_logo.png" class="img img-responsive">
+                    <img src="./imgs/pineapple_eddy_logo.png" class="img img-responsive">
                     <div class="profile-content">
                         <div class="profile-description">
                           <h5>Pineapple Eddy</h5>
@@ -319,125 +326,155 @@
                         </div>
                     </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="profile-card-4 text-center">
-                    <img src="./imgs/alex_and_thea_logo.png" class="img img-responsive">
-                    <div class="profile-content">
-                        <div class="profile-description">
-                          <h5>Pineapple Eddy</h5>
-                        </div>
-                        <div class="row stats">
-                            <div class="col-4">
-                                <div class="profile-overview">
-                                    <p>GOAL</p>
-                                    <h4>$10,000</h4>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="profile-overview">
-                                    <p>RAISED</p>
-                                    <h4>$13,147</h4>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="profile-overview">
-                                    <p>DONORS</p>
-                                    <h4>181</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="profile-card-4 text-center">
+                  <img src="./imgs/eat_your_yard_logo.png" class="img img-responsive">
+                  <div class="profile-content">
+                      <div class="profile-description">
+                        <h5>Pineapple Eddy</h5>
+                      </div>
+                      <div class="row stats">
+                          <div class="col-4">
+                              <div class="profile-overview">
+                                  <p>GOAL</p>
+                                  <h4>$10,000</h4>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="profile-overview">
+                                  <p>RAISED</p>
+                                  <h4>$13,147</h4>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="profile-overview">
+                                  <p>DONORS</p>
+                                  <h4>181</h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="profile-card-4 text-center">
+                  <img src="./imgs/alex_and_thea_logo.png" class="img img-responsive">
+                  <div class="profile-content">
+                      <div class="profile-description">
+                        <h5>Pineapple Eddy</h5>
+                      </div>
+                      <div class="row stats">
+                          <div class="col-4">
+                              <div class="profile-overview">
+                                  <p>GOAL</p>
+                                  <h4>$10,000</h4>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="profile-overview">
+                                  <p>RAISED</p>
+                                  <h4>$13,147</h4>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="profile-overview">
+                                  <p>DONORS</p>
+                                  <h4>181</h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
             </div>
           </div>
+          
         </div>
 
         <!-- Key Player Tab -->
         <div class="tab-pane fade" id="key-tab-pane" role="tabpanel" aria-labelledby="key-tab" tabindex="0">
-          <div class="container-fluid" style="width: 100%; margin-top: 15px; margin-bottom: 15px">
-            <div class="row" style="width: 90%; margin: auto;">
-              <div class="col-12 col-md-4 title-column">
-                <h1 class="key-players-title">Key Players</h1>
+          <div class="row" style="width: 100%; margin: auto; min-height: 100vh">
+            <div class="col-12 col-md-4 title-column">
+              <h1 class="key-players-title"style="width: 100%; text-align: center; background-color: white; padding: 5px 10px; color: black">Key Players</h1>
+              <p class="display-7 text-center pt-3">Lorem ipsum odor amet, consectetuer adipiscing elit. Conubia tincidunt rhoncus mollis arcu leo, proin eu. Cubilia sapien odio dictum velit amet sed. Felis malesuada aliquet a primis velit sagittis dui luctus. Bibendum ad efficitur taciti netus tempus amet. Nisi litora phasellus dignissim habitasse porta habitant risus cubilia. Maximus laoreet fusce nulla sagittis ipsum dis suscipit.</p>
+            </div>
+            <div class="col-12 col-md-8 cards-column" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./imgs/eti.png)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">Erie Technology Incubator</a></li>
+                    <!-- <li class="date">Aug. 24, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                      </ul>
+                    </li> -->
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1 style="font-weight: bold;">Erie Technology Incubator</h1>
+                  <h2>Erie, PA</h2>
+                  <p> The Erie Technology Incubator serves Northwest Pennsylvania with a unique blend of strategic guidance, dedicated mentor teams, 1:1 coaching, and networking opportunities. It provides early-stage technology-enabled companies with critical resources and support to guide them through key milestones and phases of their entrepreneurial journey.</p>
+                  <p class="read-more">
+                    <a href="#">Learn More</a>
+                  </p>
+                </div>
               </div>
-              <div class="col-12 col-md-8 cards-column">
-                <div class="blog-card">
-                  <div class="meta">
-                    <div class="photo" style="background-image: url(./imgs/eti.png)"></div>
-                    <ul class="details">
-                      <li class="author"><a href="#">Erie Technology Incubator</a></li>
-                      <!-- <li class="date">Aug. 24, 2015</li>
-                      <li class="tags">
-                        <ul>
-                          <li><a href="#">Learn</a></li>
-                          <li><a href="#">Code</a></li>
-                          <li><a href="#">HTML</a></li>
-                          <li><a href="#">CSS</a></li>
-                        </ul>
-                      </li> -->
-                    </ul>
-                  </div>
-                  <div class="description">
-                    <h1 style="font-weight: bold;">Erie Technology Incubator</h1>
-                    <h2>Erie, PA</h2>
-                    <p> The Erie Technology Incubator serves Northwest Pennsylvania with a unique blend of strategic guidance, dedicated mentor teams, 1:1 coaching, and networking opportunities. It provides early-stage technology-enabled companies with critical resources and support to guide them through key milestones and phases of their entrepreneurial journey.</p>
-                    <p class="read-more">
-                      <a href="#">Learn More</a>
-                    </p>
-                  </div>
+  
+              <div class="blog-card alt">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./imgs/gannon.png)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">The Dahlkemper School of Business at Gannon University</a></li>
+                    <!-- <li class="date">July. 15, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                      </ul>
+                    </li> -->
+                  </ul>
                 </div>
-    
-                <div class="blog-card alt">
-                  <div class="meta">
-                    <div class="photo" style="background-image: url(./imgs/gannon.png)"></div>
-                    <ul class="details">
-                      <li class="author"><a href="#">The Dahlkemper School of Business at Gannon University</a></li>
-                      <!-- <li class="date">July. 15, 2015</li>
-                      <li class="tags">
-                        <ul>
-                          <li><a href="#">Learn</a></li>
-                          <li><a href="#">Code</a></li>
-                          <li><a href="#">JavaScript</a></li>
-                        </ul>
-                      </li> -->
-                    </ul>
-                  </div>
-                  <div class="description">
-                    <h1 style="font-weight: bold;">Gannon University</h1>
-                    <h2>Dahlkemper School of Business</h2>
-                    <p>The Dahlkemper School of Business at Gannon University serves as a center of ethical business leadership and innovation to provide an excellent education in all areas of business from a values-centered and global perspective and to develop leaders to transform the world of business.</p>
-                    <p class="read-more">
-                      <a href="#">Learn More</a>
-                    </p>
-                  </div>
+                <div class="description">
+                  <h1 style="font-weight: bold;">Gannon University</h1>
+                  <h2>Dahlkemper School of Business</h2>
+                  <p>The Dahlkemper School of Business at Gannon University serves as a center of ethical business leadership and innovation to provide an excellent education in all areas of business from a values-centered and global perspective and to develop leaders to transform the world of business.</p>
+                  <p class="read-more">
+                    <a href="#">Learn More</a>
+                  </p>
                 </div>
-    
-                <div class="blog-card">
-                  <div class="meta">
-                    <div class="photo" style="background-image: url(./imgs/ecf.png)"></div>
-                    <ul class="details">
-                      <li class="author"><a href="#">The Erie Community Foundation </a></li>
-                      <!-- <li class="date">Aug. 24, 2015</li>
-                      <li class="tags">
-                        <ul>
-                          <li><a href="#">Learn</a></li>
-                          <li><a href="#">Code</a></li>
-                          <li><a href="#">HTML</a></li>
-                          <li><a href="#">CSS</a></li>
-                        </ul>
-                      </li> -->
-                    </ul>
-                  </div>
-                  <div class="description">
-                    <h1 style="font-weight: bold;">Erie Community Foundation </h1>
-                    <h2>Erie, PA</h2>
-                    <p>CrowdDrive is funded through an Erie Community Foundation Helping Today grant. The Erie Community Foundation is a collection of 800 charitable endowments operating under the administrative umbrella of a single public charity. The Foundation’s mission is to inspire, engage, and empower donors and communities across the region, today and tomorrow.</p>
-                    <p class="read-more">
-                      <a href="#">Learn More</a>
-                    </p>
-                  </div>
+              </div>
+  
+              <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./imgs/ecf.png)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">The Erie Community Foundation </a></li>
+                    <!-- <li class="date">Aug. 24, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                      </ul>
+                    </li> -->
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1 style="font-weight: bold;">Erie Community Foundation </h1>
+                  <h2>Erie, PA</h2>
+                  <p>CrowdDrive is funded through an Erie Community Foundation Helping Today grant. The Erie Community Foundation is a collection of 800 charitable endowments operating under the administrative umbrella of a single public charity. The Foundation’s mission is to inspire, engage, and empower donors and communities across the region, today and tomorrow.</p>
+                  <p class="read-more">
+                    <a href="#">Learn More</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -446,18 +483,20 @@
 
         <!-- Testimonials Tab -->
         <div class="tab-pane fade" id="testimonial-tab-pane" role="tabpanel" aria-labelledby="testimonial-tab" tabindex="0">
-          <section class="py-3 py-md-5 py-xl-8">
-            <div class="container">
-              <div class="row justify-content-md-center">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                  <h2 class="fs-6 text-secondary mb-2 text-uppercase text-center">CrownDrive</h2>
-                  <p class="display-5 mb-4 mb-md-5 text-center" style="font-weight: bold;">Testimonial</p>
-                  <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" style="background-color: maroon;">
+          <section class="pb-2 pb-md-4 pb-xl-6">
+            <div class="pt-3 pt-md-5 pt-xl-8" style="background-color: #4f0101;">
+              <div class="container">
+                <div class="row justify-content-md-center">
+                  <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6" style="color: white;">
+                    <h2 class="fs-6 mb-2 text-uppercase text-center">CrownDrive</h2>
+                    <p class="display-5 text-center mb-0" style="font-weight: bold;">Testimonial</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <div style="height: 100px; overflow: hidden; background-color: #4f0101; border: none;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C145.31,143.59 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg></div>
           
-            <div class="container overflow-hidden">
+            <div class="px-4 py-0 overflow-hidden">
               <div class="row gy-4 gy-lg-0">
                 <div class="col-12 col-lg-4">
                   <div class="card border-0">
@@ -696,13 +735,22 @@
   </div>
 
   <script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menu-toggle');
       const navbar = document.getElementById('navbar');
-      navbar.classList.toggle('show');
-    });
-    document.getElementById('nav-item').addEventListener('click', function () {
-      const navbar = document.getElementById('myTab');
-      navbar.toggle('show');
+      const navItems = document.querySelectorAll('#navbar .nav-item');
+  
+      menuToggle.addEventListener('click', function () {
+          navbar.classList.toggle('show');
+      });
+  
+      navItems.forEach(item => {
+          item.addEventListener('click', function () {
+              if (window.innerWidth <= 1110) {
+                  navbar.classList.remove('show');
+              }
+          });
+      });
     });
   </script>
 
