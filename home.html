@@ -322,12 +322,12 @@
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
-                <span class="display-6 fw-bold">Upcoming Projects</span>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <span class="display-6 fw-bold">Current Projects</span>
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <!-- <div class="accordion-body">
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="card card-margin">
@@ -362,20 +362,57 @@
                   </div>
                   
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <span class="display-6 fw-bold">Current Projects</span>
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                <span class="display-6 fw-bold">Recent Projects</span>
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 <div class="row" id="project-section"
           style="width: 100%; display: flex; justify-content: center; margin-left: 0px;margin-right: 0px;">
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+                
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                  <a href="https://www.kickstarter.com/projects/pej/pineapple-eddie-jerk-sauce-coming-to-stores-soon?ref=nav_search&result=project&term=Pineapple%20Eddy&total_hits=1" style="text-decoration: none;" target="_blank"><div class="profile-card-4 text-center">
+                    <img src="./imgs/SpiceSistersNoBG.png" class="img img-responsive">
+                    <div class="profile-content">
+                      <div class="profile-description">
+                        <h5>Spice Sisters</h5>
+                      </div>
+                      <div class="row stats">
+                        <div class="col-4">
+                          <div class="profile-overview">
+                            <p>GOAL</p>
+                            <h4>$7,500</h4>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="profile-overview">
+                            <p>RAISED</p>
+                            <h4>$8,890</h4>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="profile-overview">
+                            <p>BACKERS</p>
+                            <h4>101</h4>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 119%; font-size: larger;">119%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
                   <a href="https://www.kickstarter.com/projects/kevobrew/kevo-cold-brew-coffee-simplified?ref=nav_search&result=project&term=kevo&total_hits=5" style="text-decoration: none;" target="_blank"><div class="profile-card-4 text-center">
                     <img src="./imgs/kevo_logo.png" class="img img-responsive">
                     <div class="profile-content">
@@ -517,6 +554,52 @@
                 </div></a>
               </div>
               </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <span class="display-6 fw-bold">Upcoming Projects</span>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <!-- <div class="accordion-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="card card-margin">
+                        <div class="card-header no-border">
+                            <h5 class="card-title">Funding Project</h5>
+                        </div>
+                        <div class="card-body pt-0 card-body-overlay" style="background-image: url('./imgs/spice_sister.png');">
+                            <div class="widget-49">
+                                <div class="widget-49-title-wrapper">
+                                    <div class="widget-49-date-warning">
+                                        <span class="widget-49-date-day">21</span>
+                                        <span class="widget-49-date-month">oct</span>
+                                    </div>
+                                    <div class="widget-49-meeting-info">
+                                        <span class="widget-49-pro-title fw-bold" style="font-size: larger;">Spice Sisters</span>
+                                        <span class="widget-49-meeting-time fw-bold">Campaign runs 10/21 through 11/20</span>
+                                    </div>
+                                </div>
+                                <ol class="widget-49-meeting-points">
+                                  <li class="widget-49-meeting-item fw-bold"><span>All 7 international spice blends are Fair Trade</span></li>
+                                  <li class="widget-49-meeting-item fw-bold"><span>In business since 2018</span></li>
+                                  <li class="widget-49-meeting-item fw-bold"><span>Kickstarter campaign funds will be used to upgrade equipment and packaging</span></li>
+                                </ol>
+                                <div class="widget-49-meeting-action">
+                                  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-bold" href="#" style="color: black;">
+                                    Learn More
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
